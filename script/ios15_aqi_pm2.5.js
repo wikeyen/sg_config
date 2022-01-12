@@ -2,9 +2,9 @@
 // Developed by Hackl0us (https://github.com/hackl0us)
 
 const $ = new Env('AQI-US');
-$.token = 'afb6b4d13fedf34737e5913dc17eacbb91ca014a';
+$.token = 'hackl0us_aqi_token';
 
-const aqicnToken = $.getdata($.token);
+const aqicnToken = $.getdata($.token) || 'afb6b4d13fedf34737e5913dc17eacbb91ca014a';
 
 const AirQualityStandard = {
 	CN: 'HJ6332012.2113',
